@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Urban Wear Store</title>
+
+<style>
+body {
+  font-family: Arial;
+  margin: 0;
+  background: #f5f5f5;
+}
+
+header {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+.btn {
+  background: green;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  margin: 10px;
+  padding: 15px;
+  width: 220px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card h3 {
+  margin: 10px 0 5px;
+}
+
+.price {
+  color: #444;
+  margin-bottom: 10px;
+}
+
+section {
+  scroll-margin-top: 80px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Urban Wear Store</h1>
+  <p>Premium Clothing | Order Direct on WhatsApp</p>
+  <button class="btn" onclick="scrollToProducts()">Shop Now</button>
+</header>
+
+<section id="products" class="products">
+
+  <div class="card">
+    <img src="hoddie.jpg" alt="product">
+    <h3>Black Hoodie</h3>
+    <div class="price">Rs. 1999</div>
+    <a class="btn" href="https://wa.me/923001234567?text=I want to order Black Hoodie">Order on WhatsApp</a>
+  </div>
+
+  <div class="card">
+    <img src="tshirt.jpg" alt="product">
+    <h3>White T-Shirt</h3>
+    <div class="price">Rs. 999</div>
+    <a class="btn" href="https://wa.me/923001234567?text=I want to order White T-Shirt">Order on WhatsApp</a>
+  </div>
+
+  <div class="card">
+    <img src="jkl.jpg" alt="product">
+    <h3>Denim Jacket</h3>
+    <div class="price">Rs. 2499</div>
+    <a class="btn" href="https://wa.me/923001234567?text=I want to order Denim Jacket">Order on WhatsApp</a>
+  </div>
+
+</section>
+
+<script>
+function scrollToProducts() {
+  document.getElementById("products").scrollIntoView({ behavior: "smooth" });
+}
+</script>
+
+</body>
+</html>
